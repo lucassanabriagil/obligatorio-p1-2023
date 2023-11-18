@@ -49,7 +49,7 @@ class Gestor:
             raise ValueError("El ID debe tener 8 números.")
 
     def validar_fecha_nacimiento(self, fecha_nacimiento):
-        # Lógica para validar la fecha de nacimiento
+        
         pass
 
     def validar_score(self, score):
@@ -62,7 +62,7 @@ class Gestor:
 
     def alta_empleado(self):
             print("Ingrese los datos del empleado:")
-            empleado = None  # Inicializamos 'empleado' con None
+            empleado = None  
             try:
                 id_empleado = int(input("Ingrese cedula: "))
                 self.validar_id(id_empleado)
@@ -95,7 +95,7 @@ class Gestor:
 
                 if empleado:
                     self.empleados.append(empleado)
-                    self.empleados_generales.append(empleado)  # Agregamos el empleado a empleados_generales
+                    self.empleados_generales.append(empleado)  
                     print("Empleado registrado exitosamente.")
 
             except ValueError as e:
@@ -370,7 +370,7 @@ class Gestor:
                 self.alta_auto()
             elif opcion == '3':
                 equipo = self.alta_equipo()
-                # Aquí podrías guardar el equipo en una lista de equipos, por ejemplo
+                
             elif opcion == '4':
                 self.simular_carrera()
             elif opcion == '5':
